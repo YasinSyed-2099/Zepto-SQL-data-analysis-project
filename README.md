@@ -1,1 +1,1 @@
-# -Zepto-SQL-data-analysis-project
+# Zepto-SQL-data-analysis-project

@@ -39,7 +39,7 @@ RENAME COLUMN `ï»¿sku_id` TO sku_id;
 
 ---
 
-## 3. Dataset & Data Exploration
+## 3. Data Exploration
 
 - **Dataset Source:**
 Kaggle dataset scraped from Zepto’s official product listings, representing real-world SKU-level data across multiple categories and packaging variations.

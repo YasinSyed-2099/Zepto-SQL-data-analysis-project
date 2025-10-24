@@ -34,7 +34,7 @@ RENAME COLUMN `ï»¿sku_id` TO sku_id;
 
 - **Table Columns:**
 `sku_id, name, category, mrp, discountPercent, discountedSellingPrice, availableQuantity, weightInGms, outOfStock, quantity`
-- [View the Zepto Inventory Dataset CSV](https://github.com/YasinSyed-2099/Zepto-SQL-data-analysis-project/edit/main/zepto.csv)
+- **[View the Zepto Inventory Dataset CSV](https://github.com/YasinSyed-2099/Zepto-SQL-data-analysis-project/edit/main/zepto.csv)**
 
 
 ---
@@ -43,7 +43,7 @@ RENAME COLUMN `ï»¿sku_id` TO sku_id;
 
 - **Dataset Source:**
 Kaggle dataset scraped from Zepto’s official product listings, representing real-world SKU-level data across multiple categories and packaging variations.
-- [View the complete Zepto SQL Query File used for analysis](https://github.com/YasinSyed-2099/Zepto-SQL-data-analysis-project/edit/main/zepto.sql)
+- **[View the complete Zepto SQL Query File used for analysis](https://github.com/YasinSyed-2099/Zepto-SQL-data-analysis-project/edit/main/zepto.sql)**
 
 ### Exploration Queries
 

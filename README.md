@@ -2,7 +2,7 @@
 
 # Zepto E-Commerce Inventory Data Analysis
 
-A comprehensive SQL-based analysis of Zepto’s e-commerce product inventory. The project focuses on setting up a structured database, cleaning inconsistent data, exploring stock and pricing patterns, and extracting business insights related to discount trends, revenue estimation, and product availability.
+A comprehensive SQL-based analysis of [Zepto](https://www.zeptonow.com/) e-commerce product inventory. The project focuses on setting up a structured database, cleaning inconsistent data, exploring stock and pricing patterns, and extracting business insights related to discount trends, revenue estimation, and product availability.
 
 ---
 
@@ -32,8 +32,10 @@ ALTER TABLE zepto
 RENAME COLUMN `ï»¿sku_id` TO sku_id;
 ```
 
-**Table Columns:**
+- **Table Columns:**
 `sku_id, name, category, mrp, discountPercent, discountedSellingPrice, availableQuantity, weightInGms, outOfStock, quantity`
+- [View the Zepto Inventory Dataset CSV](https://github.com/YasinSyed-2099/Zepto-SQL-data-analysis-project/edit/main/zepto.csv)
+
 
 ---
 
@@ -41,6 +43,7 @@ RENAME COLUMN `ï»¿sku_id` TO sku_id;
 
 - **Dataset Source:**
 Kaggle dataset scraped from Zepto’s official product listings, representing real-world SKU-level data across multiple categories and packaging variations.
+- [View the complete Zepto SQL Query File used for analysis](https://github.com/YasinSyed-2099/Zepto-SQL-data-analysis-project/edit/main/zepto.sql)
 
 ### Exploration Queries
 

@@ -258,7 +258,46 @@ WHERE stock_percentile <= 0.10
   AND discountPercent < average_percentage
 ORDER BY total_quantity DESC;
 ```
+###  Q12. Identify products with above-average revenue per unit and rank them by category.
+```sql
+-- per unit revenue  
+-- average revenue 
+-- above avg and rank then ! 
 
+WITH revenue_findings AS (
+    SELECT 
+        sku_id,
+        Category,
+        name,
+        mrp,
+        discountPercent,
+        availableQuantity,
+        discountedSellingPrice,
+        weightInGms,
+        outOfStock,
+        quantity,
+        (discountedSellingPrice * quantity) AS total_revenue_per_unit 
+    FROM zepto
+),
+avg_findings AS (
+    SELECT 
+        AVG(total_revenue_per_unit) AS avg_revenue,
+        category
+    FROM revenue_findings
+    GROUP BY category
+)
+SELECT
+    r.sku_id,
+    r.category,
+    r.name,
+    r.total_revenue_per_unit,
+    RANK() OVER(PARTITION BY r.category ORDER BY r.total_revenue_per_unit DESC) AS category_rank
+FROM revenue_findings r
+JOIN avg_findings a
+    ON r.category = a.category
+WHERE r.total_revenue_per_unit > a.avg_revenue
+ORDER BY r.category ASC, category_rank ASC;
+```
 ---
 
 ## 6. Key Findings

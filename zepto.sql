@@ -167,7 +167,7 @@ FROM zepto;
 				total_inventory_value DESC
 	;
 
--- Q11. Identify products in the top 10% of stock quantity but below the overall average discount.
+-- Q12. Identify products in the top 10% of stock quantity but below the overall average discount.
 WITH stock_cte AS(
 	SELECT
     sku_id,

@@ -1,4 +1,4 @@
-# Zepto-SQL-data-analysis-project
+# Zepto-data-analysis-project
 
 # Zepto E-Commerce Inventory Data Analysis
 
